@@ -1,19 +1,18 @@
 import "../styles/global.css";
-import { Children } from "react";
 
 export const metadata = {
   title: "Prompty",
   description: "Prompty is a simple AI prompt sharing app",
 };
 
-function RootLayout(_children) {
+function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
         <div className="div">
           <div className="gradient" />
         </div>
-        <main className="app">{Children}</main>
+        <main className="app">{children}</main>
       </body>
     </html>
   );
